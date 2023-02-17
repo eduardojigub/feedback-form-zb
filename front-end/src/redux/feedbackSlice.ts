@@ -1,17 +1,20 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+//typing
 interface FeedbackState {
   name: string;
   email: string;
   message: string;
 }
 
+//setting initialState
 const initialState: FeedbackState = {
   name: '',
   email: '',
   message: '',
 };
 
+//creatingSlice
 export const feedbackSlice = createSlice({
   name: 'feedback',
   initialState,
