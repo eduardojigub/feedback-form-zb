@@ -47,3 +47,9 @@ export const SubmitButton = styled.button`
     background-color: #3e8e41;
   }
 `;
+
+export const ErrorLabel = styled.span`
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+`;
