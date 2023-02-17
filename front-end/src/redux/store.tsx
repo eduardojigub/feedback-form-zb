@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import feedbackReducer from "./feedbackSlice";
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    feedback: feedbackReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
