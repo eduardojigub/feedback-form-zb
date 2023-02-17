@@ -2,6 +2,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import styled from "styled-components";
 import FeedbackForm from "./components/FeedbackForm";
+import GoogleMapComponent from "./components/GoogleMap";
 
 const Container = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ function App() {
     <Provider store={store}>
       <Container>
         <FeedbackForm />
+        <GoogleMapComponent />
       </Container>
     </Provider>
   );

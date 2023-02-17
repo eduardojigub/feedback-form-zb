@@ -9,14 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.9.2",
     "@types/redux": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-loadable": "^5.5.0",
     "react-redux": "^8.0.5",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
