@@ -10,5 +10,4 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 // and we also define the useAppSelector hook, which returns 
 // the selected state with the RootState type.
 
-
-// it's the same as using useDispatch and useSelector but in a fancy way, lol. 
+// https://redux-toolkit.js.org/tutorials/quick-start followed this tutorial
