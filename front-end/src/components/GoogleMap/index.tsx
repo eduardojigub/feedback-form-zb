@@ -1,3 +1,6 @@
+// use this video to check how to make this googleMaps component
+// https://www.youtube.com/watch?v=9e-5QHpadi0
+
 import React, { useState, useEffect } from "react";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
