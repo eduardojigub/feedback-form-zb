@@ -28,9 +28,10 @@ export const feedbackSlice = createSlice({
     setMessage: (state, action: PayloadAction<string>) => {
       state.message = action.payload;
     },
+    cleanForm: () => initialState
   },
 });
 
-export const { setName, setEmail, setMessage } = feedbackSlice.actions;
+export const { setName, setEmail, setMessage, cleanForm } = feedbackSlice.actions;
 
 export default feedbackSlice.reducer;

@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { setName, setEmail, setMessage } from "../../redux/feedbackSlice";
+import {
+  setName,
+  setEmail,
+  setMessage,
+  cleanForm,
+} from "../../redux/feedbackSlice";
 import {
   Container,
   FormContainer,
@@ -77,8 +82,10 @@ const FeedbackForm: React.FC = () => {
     }
 
     if (name && email && isValidEmail(email) && message) {
+      e.preventDefault();
       console.log("Submitting feedback:", { name, email, message });
       // ##TODO Make API request to submit feedback
+      dispatch(cleanForm());
     }
   };
   return (
