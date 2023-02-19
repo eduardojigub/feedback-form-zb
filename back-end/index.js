@@ -1,6 +1,5 @@
 import * as dotenv from 'dotenv';
 import express from 'express';
-import mysql from 'mysql';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { PORT } from './config';
@@ -13,17 +12,6 @@ app.use(cors());
 
 // Set up body-parser middleware to parse JSON requests
 app.use(bodyParser.json());
-
-// Set up MySQL connection pool
-const pool = mysql.createPool({
-  connectionLimit: 10,
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  port: process.env.DB_PORT,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  waitForConnections: true,
-});
 
 app.get('/', (_req, res) => {
   res.send({ message: 'im online' });
