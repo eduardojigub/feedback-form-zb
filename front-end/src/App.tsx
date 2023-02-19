@@ -15,6 +15,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   height: 100vh;
+  background-image: url("/src/assets/Cloud.svg");
 `;
 
 function App() {
