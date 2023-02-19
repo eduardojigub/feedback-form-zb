@@ -3,6 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { PORT } from './config.js';
+import { pool } from './db.js';
 dotenv.config();
 
 const app = express();
@@ -20,7 +21,7 @@ app.get('/', (_req, res) => {
 app.post('/', (req, res) => {
   const { name, email, message } = req.body;
   const query =
-    'INSERT INTO railway.form (name, email, message) VALUES (?, ?, ?)';
+    'INSERT INTO form.form_data (name, email, message) VALUES (?, ?, ?)';
   pool.query(query, [name, email, message], (error, _results) => {
     if (error) {
       console.error(error);
