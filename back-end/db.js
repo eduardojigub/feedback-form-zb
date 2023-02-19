@@ -7,7 +7,10 @@ export const pool = createPool({
   host: DB_HOST,
   port: DB_PORT,
   database: DB_NAME,
-}).catch((err) => {
-  console.error('Error creating pool:', err);
-  process.exit(1);
 });
+
+pool.on('error', (err) => {
+  console.error('Database pool error:', err);
+});
+
+export default pool;

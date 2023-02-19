@@ -16,18 +16,17 @@ app.get('/', (_req, res) => {
   res.send({ message: 'im online' });
 });
 
-app.post('/', (req, res) => {
-  const { name, email, message } = req.body;
-  const query =
-    'INSERT INTO form.form_data (name, email, message) VALUES (?, ?, ?)';
-  pool.query(query, [name, email, message], (error, _results) => {
-    if (error) {
-      console.error(error);
-      res.status(500).send('Error saving form');
-    } else {
-      res.status(200).send('Form saved successfully');
-    }
-  });
+app.post('/', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+    const query =
+      'INSERT INTO form.form_data (name, email, message) VALUES (?, ?, ?)';
+    const results = await pool.query(query, [name, email, message]);
+    res.status(200).send('Form saved successfully');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error saving form');
+  }
 });
 
 // Start server
