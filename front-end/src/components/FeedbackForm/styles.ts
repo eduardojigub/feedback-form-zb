@@ -5,6 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-bottom: 10%;
 `;
 
 export const Header = styled.h1`
@@ -21,12 +22,12 @@ export const FormContainer = styled.form`
   margin: 20px 10em;
   padding: 20px;
   border-radius: 5px;
-  height: 350px;
 `;
 
 export const FormInput = styled.input`
 padding: 10px;
 border-radius: 10px;
+margin-bottom: 10px;
 width: 100%;
 color: #2D2D2D;
 font-size: 18px;
