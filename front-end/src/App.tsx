@@ -5,6 +5,8 @@ import FeedbackForm from "./components/FeedbackForm";
 import GoogleMapComponent from "./components/GoogleMap";
 import { ToastContainer } from "react-toastify";
 import Footer from "./components/Footer";
+import YellowFooter from "./assets/YellowFooter.svg";
+import FullPink from "./assets/FullPink.svg";
 
 const Container = styled.div`
   display: flex;
@@ -18,10 +20,33 @@ const Container = styled.div`
   background-image: url("/src/assets/Cloud.svg");
 `;
 
+export const AssetYellowImage = styled.div`
+  position: absolute;
+  top: 0;
+  left: calc(5% - 60px);
+  width: 150px;
+  height: 150px;
+  background-image: url(${YellowFooter});
+  background-size: cover;
+  background-position: center;
+`;
+
+export const AssetPinkImage = styled.div`
+  position: absolute;
+  top: 0;
+  left: calc(5% - 60px);
+  width: 150px;
+  height: 150px;
+  background-image: url(${FullPink});
+  background-size: cover;
+  background-position: center;
+`;
 function App() {
   return (
     <Provider store={store}>
       <Container>
+        <AssetPinkImage />
+        <AssetYellowImage />
         <FeedbackForm />
         <GoogleMapComponent />
         <ToastContainer />
