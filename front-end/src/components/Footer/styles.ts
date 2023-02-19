@@ -11,6 +11,9 @@ export const AssetPinkImage = styled.div<AssetImageProps>`
   background-image: url(${props => props.src});
   background-size: cover;
   background-position: center;
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const AssetYellowImage = styled.div<AssetImageProps>`
@@ -21,6 +24,9 @@ export const AssetYellowImage = styled.div<AssetImageProps>`
   background-size: cover;
   background-position: center;
   right: 0;
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const AssetGreenImage = styled.div<AssetImageProps>`
@@ -31,6 +37,9 @@ export const AssetGreenImage = styled.div<AssetImageProps>`
   background-image: url(${props => props.src});
   background-size: cover;
   background-position: center;
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const StyledFooter = styled.footer`
