@@ -7,8 +7,8 @@ import { ToastContainer } from "react-toastify";
 
 const Container = styled.div`
   display: flex;
-  font-weight: 400
-  font-weight: bold
+  font-weight: 400;
+  font-weight: bold;
   margin: 0:
   padding: 0;
   box-sizing: border-box;

@@ -97,6 +97,7 @@ const FeedbackForm: React.FC = () => {
         dispatch(cleanForm());
       } catch (error) {
         console.error("Error submitting form:", error);
+        dispatch(cleanForm());
       }
     }
   };
