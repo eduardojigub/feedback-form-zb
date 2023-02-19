@@ -1,5 +1,38 @@
 import styled from 'styled-components';
 
+interface AssetImageProps {
+  src: string;
+}
+
+export const AssetPinkImage = styled.div<AssetImageProps>`
+  position: absolute;
+  width: 12%;
+  height: 100%;
+  background-image: url(${props => props.src});
+  background-size: cover;
+  background-position: center;
+`;
+
+export const AssetYellowImage = styled.div<AssetImageProps>`
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background-image: url(${props => props.src});
+  background-size: cover;
+  background-position: center;
+  right: 0;
+`;
+
+export const AssetGreenImage = styled.div<AssetImageProps>`
+  position: absolute;
+  right: calc(14% - 60px);
+  width: 5%;
+  height: 80%;
+  background-image: url(${props => props.src});
+  background-size: cover;
+  background-position: center;
+`;
+
 export const StyledFooter = styled.footer`
   position: absolute;
   left: 0;
