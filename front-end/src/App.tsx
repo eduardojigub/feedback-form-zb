@@ -12,7 +12,10 @@ const Container = styled.div`
   margin: 0:
   padding: 0;
   box-sizing: border-box;
-  justify-content:
+  background-color: ##FFFFFF;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
 `;
 
 function App() {

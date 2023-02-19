@@ -12,7 +12,6 @@ export const FormContainer = styled.form`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f9f9f9;
   border-radius: 5px;
 `;
 
@@ -22,16 +21,17 @@ export const FormInput = styled.input`
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  border: 1px solid #DCDCDC
 `;
 
 export const FormTextarea = styled.textarea`
   margin: 10px 0;
   padding: 10px;
-  border: none;
+  border: 1px solid #DCDCDC;
   border-radius: 5px;
   font-size: 16px;
   height: 150px;
-  resize: none
+  resize: none;
 `;
 
 export const SubmitButton = styled.button`

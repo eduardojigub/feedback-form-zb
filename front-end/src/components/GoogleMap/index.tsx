@@ -1,12 +1,18 @@
 // use this video to check how to make this googleMaps component
 // https://www.youtube.com/watch?v=9e-5QHpadi0
-
+import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
+const StyledMap = styled(GoogleMap)`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+`;
+
 const containerStyle = {
-  width: "400px",
-  height: "400px",
+  width: "500px",
+  height: "500px",
 };
 
 const GoogleMapComponent = () => {
@@ -37,7 +43,7 @@ const GoogleMapComponent = () => {
 
   return (
     <>
-      <GoogleMap
+      <StyledMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={zoom}
