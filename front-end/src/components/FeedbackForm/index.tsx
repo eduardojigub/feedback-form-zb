@@ -88,11 +88,14 @@ const FeedbackForm: React.FC = () => {
     if (name && email && isValidEmail(email) && message) {
       e.preventDefault();
       try {
-        const response = await axios.post("http://localhost:3333", {
-          name,
-          email,
-          message,
-        });
+        const response = await axios.post(
+          "https://feedback-form-zb-production.up.railway.app/",
+          {
+            name,
+            email,
+            message,
+          }
+        );
         console.log("Form submitted successfully:", response.data);
         toast.success("Form submitted successfully!");
         dispatch(cleanForm());
