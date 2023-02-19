@@ -31,7 +31,8 @@ app.get('/', (_req, res) => {
 
 app.post('/', (req, res) => {
   const { name, email, message } = req.body;
-  const query = 'INSERT INTO form_data (name, email, message) VALUES (?, ?, ?)';
+  const query =
+    'INSERT INTO railway.form (name, email, message) VALUES (?, ?, ?)';
   pool.query(query, [name, email, message], (error, _results) => {
     if (error) {
       console.error(error);
