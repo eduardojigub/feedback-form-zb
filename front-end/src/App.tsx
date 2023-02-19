@@ -5,6 +5,7 @@ import FeedbackForm from "./components/FeedbackForm";
 import GoogleMapComponent from "./components/GoogleMap";
 import { ToastContainer } from "react-toastify";
 import Footer from "./components/Footer";
+import Cloud from "./assets/Cloud.svg";
 import YellowFooter from "./assets/YellowFooter.svg";
 import FullPink from "./assets/FullPink.svg";
 import YellowCircle from "./assets/YellowCircle.svg";
@@ -18,7 +19,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  background-image: url("/src/assets/Cloud.svg");
+  background-image: url(${Cloud});
 `;
 
 export const AssetYellowImage = styled.div`
