@@ -13,15 +13,17 @@ export const FormContainer = styled.form`
   align-items: center;
   padding: 20px;
   border-radius: 5px;
+  background-color: #123211
 `;
 
 export const FormInput = styled.input`
-  margin: 10px 0;
-  padding: 10px;
+  margin: 10px;
+  padding: 40px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  border: 1px solid #DCDCDC
+  border: 1px solid #DCDCDC;
+  background-color #a32
 `;
 
 export const FormTextarea = styled.textarea`

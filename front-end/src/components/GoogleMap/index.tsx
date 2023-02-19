@@ -4,16 +4,10 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
-const StyledMap = styled(GoogleMap)`
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  float: "right";
-`;
-
 const containerStyle = {
-  width: "500px",
-  height: "500px",
+  width: "50%",
+  height: "70%",
+  borderRadius: "50%",
 };
 
 const GoogleMapComponent = () => {
@@ -44,7 +38,7 @@ const GoogleMapComponent = () => {
 
   return (
     <>
-      <StyledMap
+      <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={zoom}

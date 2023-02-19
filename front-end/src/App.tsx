@@ -4,17 +4,16 @@ import styled from "styled-components";
 import FeedbackForm from "./components/FeedbackForm";
 import GoogleMapComponent from "./components/GoogleMap";
 import { ToastContainer } from "react-toastify";
+import Footer from "./components/Footer";
 
 const Container = styled.div`
   display: flex;
   font-weight: 400;
   font-weight: bold;
-  margin: 0:
-  padding: 0;
   box-sizing: border-box;
-  background-color: ##FFFFFF;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100vh;
 `;
 
@@ -26,6 +25,7 @@ function App() {
         <GoogleMapComponent />
         <ToastContainer />
       </Container>
+      <Footer />
     </Provider>
   );
 }

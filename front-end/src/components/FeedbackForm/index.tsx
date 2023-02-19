@@ -104,7 +104,6 @@ const FeedbackForm: React.FC = () => {
   return (
     <Container>
       <FormContainer onSubmit={handleSubmit}>
-        <h1>Reach Out Us!</h1>
         <FormInput
           type="text"
           placeholder="Your name*"

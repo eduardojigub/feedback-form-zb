@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@types/googlemaps": "^3.43.3"
+    "@types/googlemaps": "^3.43.3",
+    "react-icons": "^4.7.1"
   }
 }
