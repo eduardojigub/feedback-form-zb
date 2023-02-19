@@ -16,6 +16,7 @@ import {
   FormTextarea,
   SubmitButton,
   ErrorLabel,
+  Header,
 } from "./styles";
 
 const FeedbackForm: React.FC = () => {
@@ -104,6 +105,7 @@ const FeedbackForm: React.FC = () => {
   return (
     <Container>
       <FormContainer onSubmit={handleSubmit}>
+        <Header>Reach out to us!</Header>
         <FormInput
           type="text"
           placeholder="Your name*"

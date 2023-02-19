@@ -7,32 +7,52 @@ export const Container = styled.div`
   height: 100%;
 `;
 
+export const Header = styled.h1`
+    padding: 1em 0;
+    text-align: center;
+    color: #3E3E3E;
+`;
+
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 10em;
   padding: 20px;
   border-radius: 5px;
-  background-color: #123211
+  height: 350px;
 `;
 
 export const FormInput = styled.input`
-  margin: 10px;
-  padding: 40px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  border: 1px solid #DCDCDC;
-  background-color #a32
-`;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+color: #2D2D2D;
+font-size: 18px;
+::placeholder {
+  color: #2D2D2D;
+  opacity: 1; /* Firefox */
+}
+`
 
 export const FormTextarea = styled.textarea`
   margin: 10px 0;
+  border: 1px solid #DCDCDC;  
   padding: 10px;
-  border: 1px solid #DCDCDC;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #2D2D2D;
+  ::placeholder {
+    color: #2D2D2D;
+    opacity: 1; /* Firefox */
+  }
+  width: 100%;
+  max-width: 100%;
+  min-width: 60%;
   height: 150px;
+  max-height: 200px;
+  min-height: 150px;
   resize: none;
 `;
 
