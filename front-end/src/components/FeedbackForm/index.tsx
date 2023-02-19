@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 import {
   setName,
   setEmail,
@@ -61,7 +64,7 @@ const FeedbackForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name) {
       setErrors((prevState) => ({ ...prevState, name: "Name is required" }));
@@ -83,35 +86,45 @@ const FeedbackForm: React.FC = () => {
 
     if (name && email && isValidEmail(email) && message) {
       e.preventDefault();
-      console.log("Submitting feedback:", { name, email, message });
-      // ##TODO Make API request to submit feedback
-      dispatch(cleanForm());
+      try {
+        const response = await axios.post("http://localhost:3333", {
+          name,
+          email,
+          message,
+        });
+        console.log("Form submitted successfully:", response.data);
+        toast.success("Form submitted successfully!");
+        dispatch(cleanForm());
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
     }
   };
   return (
     <Container>
       <FormContainer onSubmit={handleSubmit}>
+        <h1>Reach Out Us!</h1>
         <FormInput
           type="text"
-          placeholder="Name"
+          placeholder="Your name*"
           value={name}
           onChange={handleNameChange}
         />
         {errors.name && <ErrorLabel>{errors.name}</ErrorLabel>}
         <FormInput
           type="email"
-          placeholder="Email"
+          placeholder="Your e-mail*"
           value={email}
           onChange={handleEmailChange}
         />
         {errors.email && <ErrorLabel>{errors.email}</ErrorLabel>}
         <FormTextarea
-          placeholder="Message"
+          placeholder="Your Message*"
           value={message}
           onChange={handleMessageChange}
         />
         {errors.message && <ErrorLabel>{errors.message}</ErrorLabel>}
-        <SubmitButton type="submit">Submit</SubmitButton>
+        <SubmitButton type="submit">Send Message</SubmitButton>
       </FormContainer>
     </Container>
   );

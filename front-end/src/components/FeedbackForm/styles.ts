@@ -31,20 +31,23 @@ export const FormTextarea = styled.textarea`
   border-radius: 5px;
   font-size: 16px;
   height: 150px;
+  resize: none
 `;
 
 export const SubmitButton = styled.button`
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 20px 40px;
   border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
+  border-radius: 50px;
+  background-color: #FAD34F;
+  color: #FFFF;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  font-family: 'Apercu Arabic Pro'
 
   &:hover {
-    background-color: #3e8e41;
+    background-color: #FAD35F;
   }
 `;
 
