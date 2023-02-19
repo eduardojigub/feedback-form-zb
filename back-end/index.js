@@ -20,7 +20,7 @@ app.post('/', async (req, res) => {
   try {
     const { name, email, message } = req.body;
     const query =
-      'INSERT INTO form.form_data (name, email, message) VALUES (?, ?, ?)';
+      'INSERT INTO railway.form (name, email, message) VALUES (?, ?, ?)';
     const results = await pool.query(query, [name, email, message]);
     res.status(200).send('Form saved successfully');
   } catch (error) {
