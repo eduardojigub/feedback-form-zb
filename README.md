@@ -9,6 +9,7 @@
 - Used props and handling functions to interact with the page. 
 - Used Styled Components CSS for design
 - Form Validation
+- Axios for requests
 - Display responsive on mobile
 - Request an api from GoogleApi to show the user location. 
 - An simple API to make a POST request to the database. 
