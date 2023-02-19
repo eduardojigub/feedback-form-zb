@@ -1,37 +1,38 @@
-#Project Dot-Challenge
+#Project Zen Bit Challenge FullStack
 
-## Skills
+## Full-Stack Skills
 
-- Creating a functional movie e-commerce using ReactJS
-- Create functional components in React
-- Use props and handling functions to interact with the page. 
-- Use Material UI/Boostrap and Pure CSS for design (Skeletons, Navbar, Forms, grid, etc)
-- Using Masks on input field
+- Stack used: REACT/NODE/MY SQL
+- Creating a functional feedback form using ReactJS and NodeJS 
+- Create functional components in React using Typescript. 
+- Using Redux Toolkit to control the inputs states.
+- Used props and handling functions to interact with the page. 
+- Used Styled Components CSS for design
 - Form Validation
 - Display responsive on mobile
-- Request an api from TMDB https://www.themoviedb.org/
+- Request an api from GoogleApi to show the user location. 
+- An simple API to make a POST request to the database. 
+- Using React Toastify to show messages on failure/sucess
 
 
 ## What was developed
 
-- A movie commerce application using ReactJS
+- A feedback form based on the provided figma: https://www.figma.com/file/OmpRyHggnkIZ7Qr1c5o5gg/Untitled?node-id=0%3A1
 
 ## :dart: Instructions for viewing the project:
 
- Make git clone;
-   - Create a API key on TMDB https://www.themoviedb.org/
-  - Create a .env file and put your own REACT_APP_API_KEY
-  - Give the command `npm install`;
-  - Use `npm start`;
+You can clone the project, say `npm run dev` on both folders. 
+Add the google API key for rendering the map.  
 
 OR (easiest)
 
-
-2. Access through the Vercel link: https://dot-challenge-react-tqks.vercel.app/
+2. Access through the links below: 
+1. [Front-end](https://feedback-form-zb.vercel.app/)
+2. [Back-end](https://feedback-form-zb-production.up.railway.app/)
 
 
 ## GIF from the project:
 <p align="center">
-  <img  src="https://user-images.githubusercontent.com/47367373/192168400-3cf56db6-92bd-44f3-9eac-2fb65e1acfb2.gif"
-lt="Movie Commerce"/>
+  <img  src=""
+lt="FeedbackForm"/>
 </p>
