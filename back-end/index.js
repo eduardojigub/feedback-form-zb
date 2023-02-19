@@ -3,10 +3,10 @@ import express from 'express';
 import mysql from 'mysql';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import { PORT } from './config';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Set up CORS middleware to allow requests from frontend
 app.use(cors());
