@@ -30,7 +30,7 @@ export const AssetYellowImage = styled.div`
   background-image: url(${YellowFooter});
   background-size: cover;
   background-position: center;
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;
@@ -44,7 +44,7 @@ export const AssetPinkImage = styled.div`
   background-size: cover;
   background-position: center;
   z-index: 1;
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;
@@ -60,7 +60,7 @@ export const AssetYellowCircle = styled.div`
   background-position: center;
   z-index: 1;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;
