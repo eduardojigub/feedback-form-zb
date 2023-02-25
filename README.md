@@ -2,7 +2,7 @@
 
 ## Full-Stack Skills
 
-- Stack used: REACT/NODE/MY SQL
+- Stack used: REACT with VITE/NODE JS/MY SQL
 - Creating a functional feedback form using ReactJS and NodeJS 
 - Create functional components in React using Typescript. 
 - Using Redux Toolkit to control the inputs states.
